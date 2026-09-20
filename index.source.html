@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SV Digital Studio — Modern UI/UX Design & Data Analytics</title>
+    <meta name="description" content="SV Digital Studio: Modern UI/UX Design & Data Analytics Solutions for Businesses. Helping startups and enterprises build beautiful, user-friendly, and data-driven products." />
+    <meta property="og:title" content="SV Digital Studio — Modern UI/UX Design & Data Analytics" />
+    <meta property="og:description" content="Modern UI/UX Design & Data Analytics Solutions for Businesses. Founded by specialist UI/UX designers and data analysts." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Prevent Vite HMR container websocket errors from triggering unhandled rejection dialogs
+      window.addEventListener('unhandledrejection', function(event) {
+        try {
+          var msg = String(event && event.reason && (event.reason.message || event.reason) || '');
+          if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('closed without opened') !== -1) {
+            event.preventDefault();
+          }
+        } catch (e) {}
+      });
+      window.addEventListener('error', function(event) {
+        try {
+          var msg = String(event && event.message || '');
+          if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('failed to connect to websocket') !== -1) {
+            event.preventDefault();
+          }
+        } catch (e) {}
+      });
+    </script>
+  </head>
+  <body class="antialiased selection:bg-purple-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
